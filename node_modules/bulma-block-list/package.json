@@ -1,0 +1,56 @@
+{
+  "_from": "bulma-block-list@^0.2",
+  "_id": "bulma-block-list@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-SxwQWuRG6dXOwZFkYtpnahbXT1b3LWNkuLVJ1ACEPp/2Bie8aDQoq8iFcFd9WfWr+9U9DZ3Vj54V0lKmn8T/fQ==",
+  "_location": "/bulma-block-list",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "bulma-block-list@^0.2",
+    "name": "bulma-block-list",
+    "escapedName": "bulma-block-list",
+    "rawSpec": "^0.2",
+    "saveSpec": null,
+    "fetchSpec": "^0.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bulma-block-list/-/bulma-block-list-0.2.0.tgz",
+  "_shasum": "a0777b3d1c7151146717042b07c57eed0683d8db",
+  "_spec": "bulma-block-list@^0.2",
+  "_where": "/Users/chrisrhymes/Code/bulma-clean-theme",
+  "author": {
+    "name": "chrisrhymes"
+  },
+  "bugs": {
+    "url": "https://github.com/chrisrhymes/bulma-block-list/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bulma": "^0.8.0"
+  },
+  "deprecated": false,
+  "description": "A simple scss package extending Bulma with block style list elements",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "homepage": "https://github.com/chrisrhymes/bulma-block-list#readme",
+  "keywords": [
+    "Bulma",
+    "List",
+    "BlockList",
+    "Unordered List"
+  ],
+  "license": "MIT",
+  "main": "src/block-list.scss",
+  "name": "bulma-block-list",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url src/demo.scss docs/demo.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "version": "0.2.0"
+}
