@@ -7,8 +7,7 @@ hero_height: is-small
 ---
 
 [Nilearn](https://nilearn.github.io) is a Python tool that has historically focused on statistical learning with volumetric magnetic resonance imaging (MRI) data.
-With the recent merge of the [Nistats](https://nistats.github.io) code base,
-the Nilearn mission statement has been revised and expanded:
+With the recent merge of the [Nistats](https://nistats.github.io) code base, the Nilearn mission statement has been revised and expanded:
 
 > Nilearn enables **approachable and versatile analyses of brain volumes**.
 > It provides statistical and machine-learning tools, with **instructive documentation & a friendly community**.
@@ -31,6 +30,6 @@ will be recorded and posted online.
 
 ## Contact
 
-**Organizers:** Bertrand Thirion, Elizabeth DuPre, Gaël Varoquaux, Jérôme Dockès, Nicholas Gensollen, Thomas Bazeille.
+**Organizers:** Bertrand Thirion, Elizabeth DuPre, Gaël Varoquaux, Jérôme Dockès, Nicolas Gensollen, Thomas Bazeille.
 
 Please contact the [Nilearn Events](mailto:nilearn.events@gmail.com) team if you have questions, or want to participate in any of the events.

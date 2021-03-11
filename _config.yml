@@ -1,9 +1,9 @@
 # Site Settings
-title: "Nilearn Dev Days 2020"
+title: "Nilearn Dev Days 2021"
 description: >
   Join the Nilearn development community and shape what's next
 baseurl: "/bulma-clean-theme"
-url: "https://www.elizabeth-dupre.com"
+url: "https://nilearn.github.io/dev-days-2021/"
 
 plugins:
   - jekyll-sitemap

@@ -11,8 +11,7 @@ The sprint will be a community effort to work on nilearn: adding new features, i
 
 ## Sprint Registration
 
-If you would like to receive information about the organization of the online
-sprint directly by email, please fill the form below.
+If you would like to receive information about the organization of the online sprint directly by email, please fill the form below.
 Otherwise this page will be maintained up-to-date.
 
 <form name="input" method="POST" action="https://formspree.io/nilearn.events@gmail.com">
