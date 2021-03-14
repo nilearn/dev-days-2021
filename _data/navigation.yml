@@ -1,6 +1,4 @@
-- name: Software Conference
-  link: /software.html
-- name: Development Sprint
-  link: /sprint.html
-- name: Scientific Day
-  link: /science.html
+- name: Getting Started
+  link: /getting-started.html
+- name: 2020 Talks
+  link: /old-content.html

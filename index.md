@@ -6,31 +6,32 @@ show_sidebar: false
 hero_height: is-small
 ---
 
-[Nilearn](https://nilearn.github.io) is a Python tool that has historically focused on statistical learning with volumetric magnetic resonance imaging (MRI) data.
-With the recent merge of the [Nistats](https://nistats.github.io) code base,
-the Nilearn mission statement has been revised and expanded:
+[Nilearn](https://nilearn.github.io) enables approachable and versatile analyses of brain volumes.
+It provides statistical and machine-learning tools, with instructive documentation & friendly community.
 
-> Nilearn enables **approachable and versatile analyses of brain volumes**.
-> It provides statistical and machine-learning tools, with **instructive documentation & a friendly community**.
+It supports general linear model (GLM) based analysis and leverages the scikit-learn Python toolbox for multivariate statistics with applications such as predictive modelling, classification, decoding, or connectivity analysis.
 
-In the 2021 Dev Days, we hope to increase the awareness of Nilearn's development philosophy and onboard new contributors to our community.
-We also hope to highlight future directions where we are especially excited to see community-driven development efforts.
+In the 2021 Dev Days, we hope to onboard new contributors to our community and explore future directions for development.
+
 
 ## Schedule
 
-The Dev Days will be structured as **a three-day event from 5-7 May**, all occurring online:
-
-Event | Details | Time
------ | ------- | ----
-Software development day ([Speakers](#software-development-day-19-may-confirmed-speakers)) | Best practices in scientific software development and how these are reflected in Nilearn's development philosophy | 19 May
-Coding Sprint for Nilearn ([Register](#sprint-registration)) | Improve and extend the Nilearn library under the guidance of the Nilearn team. For developers and experienced users. | 20-21 May
-Scientific day: Machine Learning in Neuroimaging ([Speakers](#scientific-day-22-may-confirmed-speakers)) | Applications of machine learning in Neuroimaging | 22 May
-
-For the two mini-conferences (Software Development Day and Scientific Day), all talks
-will be recorded and posted online.
+TBD.
 
 ## Contact
 
 **Organizers:** Bertrand Thirion, Elizabeth DuPre, Gaël Varoquaux, Jérôme Dockès, Nicholas Gensollen, Thomas Bazeille.
 
 Please contact the [Nilearn Events](mailto:nilearn.events@gmail.com) team if you have questions, or want to participate in any of the events.
+
+## Register
+
+<form name="input" method="POST" action="https://formspree.io/nilearn.events@gmail.com">
+  <p>Name: <input type="text" name="Name" placeholder="Name" size="50"></p>
+  <p>Email: <input type="email" name="_replyto" placeholder="Email" size="50"></p>
+  <p>Affiliation: <input type="text" name="affiliation" placeholder="Current affiliation(s)" size="50"></p>
+  <p>GitHub: <input type="text" name="gh-handle" placeholder="GitHub Handle" size="50"></p>
+  <p>Comment</p>
+  <textarea name="message" placeholder="Comments or questions"></textarea>
+  <p><input type="submit" value="send" size="80"></p>
+</form>
