@@ -2,8 +2,8 @@
 title: "Nilearn Dev Days 2021"
 description: >
   Join the Nilearn development community and shape what's next
-baseurl: "/bulma-clean-theme"
-url: "https://nilearn/github.io/dev-days-2021"
+baseurl: "/dev-days-2021"
+url: "https://nilearn.github.io"
 
 plugins:
   - jekyll-sitemap
