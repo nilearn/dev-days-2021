@@ -13,28 +13,30 @@ In the 2021 Dev Days, we hope to onboard new contributors to our community and e
 
 ## Schedule
 
+Although we encourage hacking throughout the Dev Days,
+we wanted to include a few structured events during a smaller portion of the day when both our European and American contributors are likely to be awake.
+
+We also especially encourage attendees to suggest additional events during these times !
+
 ### Wednesday, 5 May
 
-13:00h UTC [Check your local time](https://www.timeanddate.com/worldclock/converter.html?iso=20210505T130000&p1=195) : Kick-off and what's new in Nilearn
+13:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210505T130000&p1=195) : Kick-off and what's new in Nilearn
 
-14:00h UTC [Check your local time](https://www.timeanddate.com/worldclock/converter.html?iso=20210505T140000&p1=195) : Interactive crash-course in contributing to Nilearn
+14:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210505T140000&p1=195) : Interactive crash-course in contributing to Nilearn
 
-16:00h UTC [Check your local time](https://www.timeanddate.com/worldclock/converter.html?iso=20210505T160000&p1=195) : Community feedback on Nilearn website, documentation
-
+16:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210505T160000&p1=195) : Community feedback on Nilearn website, documentation
 
 ### Thursday, 6 May
 
-13:00h UTC [Check your local time](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T130000&p1=195) : Brainstorming [BIDS](https://bids.neuroimaging.io) integration in Nilearn
+13:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T130000&p1=195) : Brainstorming [BIDS](https://bids.neuroimaging.io) integration in Nilearn
 
-16:00h UTC [Check your local time](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T160000&p1=195) : Demo of HTML reports, with feedback and discussion
-
+16:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T160000&p1=195) : Demo of HTML reports, with feedback and discussion
 
 ### Friday, 7 May
 
-13:00h UTC [Check your local time](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T130000&p1=195) : Supporting more surface modelling in Nilearn
+13:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T130000&p1=195) : Supporting more surface modelling in Nilearn
 
-16:00h UTC [Check your local time](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T160000&p1=195) : Barriers to adoption and community building
-
+16:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T160000&p1=195) : Barriers to adoption and community building
 
 ## Contact
 
