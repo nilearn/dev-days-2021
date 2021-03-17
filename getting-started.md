@@ -7,13 +7,31 @@ show_sidebar: false
 hero_height: is-small
 ---
 
-Ready to get started ?
+## Ready to get started ?
 
-Link to Python installation.
+In this section we explain briefly how to get up and running in a minimal number of steps.
 
-Link to Nilearn contributing docs.
+### Install Python
 
-Link to sprint project board.
+The firts step is obviously to have Python installed and working. We recommand having a version of Python higher or equal to 3.6. If you don't have Python installed already, you can get it on the [official website](https://www.python.org/downloads/).
+
+### Install Nilearn
+
+Once you have Python installed correclty on your machine, you need to install [Nilearn](https://github.com/nilearn/nilearn) and its dependencies. Nilearn is available through [Pypi](https://pypi.org/project/nilearn/) such that you should be able to run:
+
+```bash
+$ pip install nilearn
+```
+
+Note that you may want to create a virtual environnement using for example [anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). More information for installing nilearn is available on the [online documentation](https://nilearn.github.io/introduction.html#installation).
+
+### Checkout Nilearn contributing docs
+
+Once you have Python and Nilearn installed and working, you can checkout the nilearn [contributing documentation](http://nilearn.github.io/development.html) which explains how to get set up to make contributions to the project.
+
+### Browse selected issues
+
+Finally, when you are ready to contribute, you can browse the issues we have selected specifically for the sprint on the following [project board](https://github.com/nilearn/nilearn/projects/6).
 
 ## Sprint infrastructure
 
