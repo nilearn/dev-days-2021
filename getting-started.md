@@ -15,9 +15,11 @@ In this section we explain briefly how to get up and running in a minimal number
 
 The firts step is obviously to have Python installed and working. We recommand having a version of Python higher or equal to 3.6. If you don't have Python installed already, you can get it on the [official website](https://www.python.org/downloads/).
 
-### Install Nilearn
+### Install Nilearn and Nibabel
 
-Once you have Python installed correclty on your machine, you need to install [Nilearn](https://github.com/nilearn/nilearn) and its dependencies. Nilearn is available through [Pypi](https://pypi.org/project/nilearn/) such that you should be able to run:
+Once you have Python installed correclty on your machine, you need to install [Nilearn](https://github.com/nilearn/nilearn),  [Nibabel](https://github.com/nipy/nibabel) and their dependencies. Both Nilearn and Nibabel are available through Pypi ([Nilearn link](https://pypi.org/project/nilearn/), [Nibabel link](https://pypi.org/project/nibabel/)) such that you should be able to pip-install them. 
+
+Actually, since Nibabel is a dependency of Nilearn, you can simply install everything you need by running:
 
 ```bash
 $ pip install nilearn
@@ -27,18 +29,18 @@ Note that you may want to create a virtual environnement using for example [anac
 
 ### Checkout Nilearn contributing docs
 
-Once you have Python and Nilearn installed and working, you can checkout the nilearn [contributing documentation](http://nilearn.github.io/development.html) which explains how to get set up to make contributions to the project.
+Once you have everything installed and working, you can checkout the nilearn [contributing documentation](http://nilearn.github.io/development.html) which explains how to get set up to make contributions to the project.
 
 ### Browse selected issues
 
-Finally, when you are ready to contribute, you can browse the issues we have selected specifically for the sprint on the following [project board](https://github.com/nilearn/nilearn/projects/6).
+Finally, when you are ready to contribute, you can browse the nilearn issues we have selected specifically for the sprint on the following [project board](https://github.com/nilearn/nilearn/projects/6), as well as the [nibabel issues](https://github.com/nipy/nibabel/issues).
 
 ## Sprint infrastructure
 
 - Technical discussions should take place on GitHub as usual to keep track of development and have open discussions.
-- To create more dynamic time together (albeit remotely), we have created a [Nilearn-Dev-Days Discord](https://discord.gg/bMBhb7w) room.
+- To create more dynamic time together (albeit remotely), we have created a [Nilearn-Nibabel-Dev-Days Discord](https://discord.gg/bMBhb7w) room.
   You can find a quick introduction to the Discord platform at the end of this email.
-- Important announcements will be made on both Discord “general” channel and the dedicated Nilearn issue.
+- Important announcements will be made on both Discord “general” channel and the dedicated issue.
 
 ## Daily organization
 
