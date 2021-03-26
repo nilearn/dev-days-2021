@@ -48,12 +48,13 @@ Please contact the [Nilearn Events](mailto:nilearn.events@gmail.com) team if you
 
 ## Register
 
-<form name="input" method="POST" action="https://formspree.io/nilearn.events@gmail.com">
-  <p>Name: <input type="text" name="Name" placeholder="Name" size="50"></p>
-  <p>Email: <input type="email" name="_replyto" placeholder="Email" size="50"></p>
-  <p>Affiliation: <input type="text" name="affiliation" placeholder="Current affiliation(s)" size="50"></p>
-  <p>GitHub: <input type="text" name="gh-handle" placeholder="GitHub Handle" size="50"></p>
-  <p>Comment</p>
+<form name="input" method="POST" action="https://formspree.io/f/myylgbal">
+  <label>Name: <input type="text" name="Name" placeholder="Name" size="50"></label>
+  <label>Email: <input type="email" name="_replyto" placeholder="Email" size="50"></label>
+  <label>Affiliation: <input type="text" name="affiliation" placeholder="Current affiliation(s)" size="50"></label>
+  <label>GitHub: <input type="text" name="gh-handle" placeholder="GitHub Handle" size="50"></label>
+  <label>Comment:
   <textarea name="message" placeholder="Comments or questions"></textarea>
-  <p><input type="submit" value="send" size="80"></p>
+  </label>
+  <button type"submit">Send"</button>
 </form>
