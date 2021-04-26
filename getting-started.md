@@ -33,7 +33,10 @@ Once you have everything installed and working, you can checkout the nilearn [co
 
 ### Browse selected issues
 
-Finally, when you are ready to contribute, you can browse the nilearn issues we have selected specifically for the sprint on the following [project board](https://github.com/nilearn/nilearn/projects/6), as well as the [nibabel issues](https://github.com/nipy/nibabel/issues).
+Finally, when you are ready to contribute, you can browse the issues we have selected specifically for the sprint on the following project boards:
+
+- [Nilearn project board](https://github.com/nilearn/nilearn/projects/6)
+- [Nibabel project board](https://github.com/nipy/nibabel/projects/1).
 
 ## Sprint infrastructure
 
