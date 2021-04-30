@@ -8,6 +8,7 @@ May 5th 1pm - 2pm UTC
 
 - Bertrand Thirion
 - Nicolas Gensollen
+- Christopher Markiewicz
 
 ## Objective
 
@@ -44,3 +45,6 @@ Nilearn now has a fetcher to download Dictionaries of Functional Modes, or “Di
 that can serve as atlases to extract functional signals with different 
 dimensionalities (64, 128, 256, 512, and 1024).
 
+### New things in Nibabel
+
+**TODO: Add things here**
