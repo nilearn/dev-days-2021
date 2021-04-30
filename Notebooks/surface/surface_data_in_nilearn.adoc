@@ -1,0 +1,178 @@
+= Surface data in Nilearn
+:docinfo: shared
+:source-highlighter: pygments
+:pygments-style: default
+:source-language: python
+:webfonts!:
+:prewrap!:
+:nofooter:
+
+Discussions from last year:
+
+- https://github.com/nilearn/nilearn/issues/2171[Nilearn #2171]
+- https://github.com/nipy/nibabel/issues/936[NiBabel #936]
+
+== In-memory representation
+
+[horizontal]
+Volume image:: `nibabel.nifti1.Nifti1Image`.
+Has a shape, an affine, and a data array.
+Surface image:: `nilearn.surface.Surface`, added in https://github.com/nilearn/nilearn/pull/2672[#2672] (result from discussions at "`Nilearn Dev Days`" 2020).
+
+[text,subs="quotes"]
+----
+*surf*                   nilearn.surface.Surface
+surf.*mesh*              nilearn.surface.Mesh
+surf.mesh.*coordinates*  numpy.ndarray
+surf.mesh.*faces*        numpy.ndarray
+surf.*data*              numpy.ndarray
+----
+
+Possible drawbacks:
+
+- risk of creating copies of the mesh (unless `mesh` can be `None` or a small object representing a standard mesh?)
+- no coupling between left and right hemispheres of a single brain.
+
+`Surface` is not used by Nilearn functions yet.
+For example:
+
+----
+plotting.plot_stat_map(img)
+----
+
+but (at the moment):
+
+----
+plotting.plot_surf_stat_map(mesh, data)
+----
+
+Work in progress -- https://github.com/nilearn/nilearn/pull/2682[#2682]:
+----
+plotting.plot_surf_stat_map(surf) # not implemented yet!
+----
+
+
+
+== Loading images and serialization
+
+=== Volumes
+Handled by `nibabel`; `nilearn` adds concatenating several images.
+An image is a filesystem path or a `nibabel.spatialimages.SpatialImage`.
+
+----
+img = image.load_img("img.nii")
+all_imgs = image.load_img(["img_1.nii", img_2])
+----
+
+Writing:
+----
+img.to_filename("v_img.nii")
+----
+
+=== Surfaces
+File formats also handled by `nibabel`; `mesh` and `data` are kept in separate files.
+Representation of a surface is less constrained than that of an image.
+
+----
+surf = surface.load_surface((mesh, "data.gii"))
+surf = surface.load_surface((("coordinates.gii", "faces.gii"), np.load("data.npy")))
+
+all_surfs = surface.load_surface(("mesh.gii", ["data_1.gii", "data_2.gii"])) # error
+all_surfs = surface.load_surface(("mesh.gii", "data_*.gii")) # ok
+all_surfs = surface.load_surface([surf_1, surf_2]) # error
+all_surfs = surface.load_surface([surf_1, surf_2, surf_3]) # different error
+
+all_surfs = surface.concat_surfaces([surf_1, surf_2]) # not implemented
+----
+
+Need to avoid storing copies of the mesh
+----
+[surface.load_surface(("mesh.gii", data_f)) for data_f in data_files] # probably bad
+
+mesh = surface.load_surf_mesh("mesh.nii")
+[surface.load_surface((mesh, data_f)) for data_f in data_files] # better
+----
+
+Writing:
+----
+surf.to_filename(data="data.gii") # not implemented
+----
+
+== Masking and analysis
+
+=== Volumes
+----
+masker = input_data.NiftiMasker(mask_img).fit()
+data = masker.transform(img)
+train_data = masker.transform(images[train_indices])
+----
+
+=== Surfaces
+
+----
+surf_masker = surface.SurfMasker(mask_surf).fit() # not implemented yet!
+data = surf_masker.transform(surf) # load surf, index it if mask_surf is not None
+train_data = surf_masker.transform(surfaces[train_indices]) # error in surface.load_surface?
+----
+
+
+Will also need `SurfLabelsMasker` (https://github.com/nilearn/nilearn/pull/2424[#2424]), `SurfMapsMasker`, and equivalents for some helpers such as `image.threshold_img`.
+Possibly a `VolToSurfMasker` interface to `surface.vol_to_surf`:
+
+----
+data = surface.VolToSurfMasker(pial, wm).fit().transform(img) # not implemented yet!
+----
+or concatenating several (left and right) meshes:
+----
+data = surface.VolToSurfMasker(fsaverage).fit().transform(img) # not implemented yet!
+----
+
+With the right maskers, some estimators should work easily with either surfaces or volumes.
+
+----
+# not possible yet:
+
+decoding.Decoder(mask=surf_masker).fit(train_surfs, train_conditions)
+
+decomposition.DictLearning(mask=surf_masker).fit(train_surfs)
+
+sklearn.pipeline.Pipeline(
+    [
+        ("masking", surf_labels_masker),
+        ("connectivity", connectome.ConnectivityMeasure(vectorize=True)),
+        ("classif", sklearn.svm.LinearSVR)
+    ]
+).fit(train_surfs, train_y)
+----
+
+At least for decoding, we will want to join the values from *both hemispheres* -- what should that look like?
+
+Avoid:
+
+----
+X = np.concatenate([left, right], axis=1) # allocate twice the memory, no inverse_transform
+X = surf_data.reshape((surf_data.shape[0] // 2, -1)) # probable disaster
+----
+
+== Plotting
+
+=== Matplotlib figures
+`plot_surf_stat_map`, `plot_surf_roi`, `plot_img_on_surf`.
+
+Limitations:
+
+- Matplotlib limited for 3D: values are associated with faces rather than vertices, aspect ratio often incorrect, slow for large meshes, ...
+
+=== Javascript plots with Plotly
+`view_surf`, `view_img_on_surf`.
+
+Limitations:
+
+- can only dump to HTML, no way to save as an image.
+- no in-memory figure object, so customizing the plots, adding overlays, etc. would require more parameters or a new API.
+- plots use a lot of memory.
+
+=== Possible enhancement: add Plotly Python as an optional dependency
+
+- would also need `kaleido` to create the static images
+- not started yet
