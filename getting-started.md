@@ -40,10 +40,10 @@ Finally, when you are ready to contribute, you can browse the issues we have sel
 
 ## Sprint infrastructure
 
-- Technical discussions should take place on GitHub as usual to keep track of development and have open discussions.
+- Technical discussions should take place on [GitHub](https://github.com/nilearn/nilearn) as usual to keep track of development and have open discussions.
 - To create more dynamic time together (albeit remotely), we have created a [Nilearn-Nibabel-Dev-Days Discord](https://discord.gg/bMBhb7w) room.
-  You can find a quick introduction to the Discord platform at the end of this email.
-- Important announcements will be made on both Discord “general” channel and the dedicated issue.
+  You can find a quick introduction to the Discord platform at the end of this page.
+- Important announcements will be made on both Discord “general” channel and the [dedicated issue](https://github.com/nilearn/nilearn/issues/2739).
 
 ## Daily organization
 
@@ -56,13 +56,13 @@ Finally, when you are ready to contribute, you can browse the issues we have sel
   We do not expect anyone to attend all (or most !) of that time !
   These are just the times when at least one current Nilearn core developer will be online to help with general questions and point towards available resources.
 
-### An introduction to Discord
+## An introduction to Discord
 
-Discord is a chat platform that allows for both voice and text communication.
-In the left panel, you can modify settings at the top (notifications, privacy…) and see all available channels below (text and voice)
-In the right panel you can see who is connected and contact them directly.
+Discord is a chat platform that allows for both voice and text communication. If you are new to discord, we encourage you to read the quick introduction guide [here](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord), which explains the basics of Discord.
+
+In the left panel, you can modify settings at the top (notifications, privacy…) and see all available channels below (text and voice). In the right panel you can see who is connected and contact them directly.
 
 The general channels will be for welcoming, general announcements, and asking general questions.
-A break channel is dedicated to sharing breaks together.
-You can create other channels to accommodate specific needs (for example, setting up your development environment).
+A break channel is dedicated to sharing breaks together. You can create other channels to accommodate specific needs (for example, setting up your development environment).
+
 Notifications can be a bit overwhelming on Discord, don’t hesitate to filter them out while working (muting channels with right-click or setting your account on Do Not Disturb).
