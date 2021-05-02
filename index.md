@@ -42,7 +42,7 @@ We also especially encourage attendees to suggest additional events during these
 
 ## Contact
 
-**Organizers:** Bertrand Thirion, Elizabeth DuPre, Gaël Varoquaux, Jérôme Dockès, Nicolas Gensollen, Thomas Bazeille.
+**Organizers:** Bertrand Thirion, Elizabeth DuPre, Gaël Varoquaux, Jérôme Dockès, Nicolas Gensollen, Thomas Bazeille, Taylor Salo.
 
 Please contact the [Nilearn Events](mailto:nilearn.events@gmail.com) team if you have questions, or want to participate in any of the events.
 
