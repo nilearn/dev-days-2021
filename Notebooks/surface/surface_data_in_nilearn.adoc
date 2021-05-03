@@ -30,7 +30,7 @@ surf.*data*              numpy.ndarray
 
 Possible drawbacks:
 
-- risk of creating copies of the mesh (unless `mesh` can be `None` or a small object representing a standard mesh?)
+- risk of creating copies of the mesh (unless `mesh` can be `None` or an `Enum` member representing a standard mesh?)
 - no coupling between left and right hemispheres of a single brain.
 
 `Surface` is not used by Nilearn functions yet.
