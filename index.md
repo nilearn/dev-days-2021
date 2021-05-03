@@ -46,7 +46,7 @@ We also especially encourage attendees to suggest additional events during these
 
 14:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T140000&p1=195) : Barriers to adoption and community building
 
-17:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T170000&p1=195) : Barriers to adoption and community building
+17:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T170000&p1=195) : Closing session
 
 ## Contact
 
