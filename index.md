@@ -32,13 +32,13 @@ We also especially encourage attendees to suggest additional events during these
 
 14:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210505T140000&p1=195) : Interactive crash-course in contributing to Nilearn/Nibabel
 
-16:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210505T160000&p1=195) : Community feedback on Nilearn website, documentation
-
 ### Thursday, 6 May
 
 13:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T130000&p1=195) : Brainstorming [BIDS](https://bids.neuroimaging.io) integration in Nilearn
 
 14:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T140000&p1=195) : Supporting more surface modelling in Nilearn and Nibabel
+
+16:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T160000&p1=195) : Community feedback on Nilearn website, documentation
 
 ### Friday, 7 May
 
