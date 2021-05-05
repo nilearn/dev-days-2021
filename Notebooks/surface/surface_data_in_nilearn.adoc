@@ -156,23 +156,4 @@ X = surf_data.reshape((surf_data.shape[0] // 2, -1)) # probable disaster
 
 == Plotting
 
-=== Matplotlib figures
-`plot_surf_stat_map`, `plot_surf_roi`, `plot_img_on_surf`.
-
-Limitations:
-
-- Matplotlib limited for 3D: values are associated with faces rather than vertices, aspect ratio often incorrect, slow for large meshes, ...
-
-=== Javascript plots with Plotly
-`view_surf`, `view_img_on_surf`.
-
-Limitations:
-
-- can only dump to HTML, no way to save as an image.
-- no in-memory figure object, so customizing the plots, adding overlays, etc. would require more parameters or a new API.
-- plots use a lot of memory.
-
-=== Possible enhancement: add Plotly Python as an optional dependency
-
-- would also need `kaleido` to create the static images
-- not started yet
+Not discussed in this session but see for example https://github.com/nilearn/nilearn/issues/2793[#2793]
