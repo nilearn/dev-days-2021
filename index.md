@@ -40,11 +40,9 @@ We also especially encourage attendees to suggest additional events during these
 
 15:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T150000&p1=195) : Integration of [`load_confounds`](https://github.com/nilearn/nilearn/issues/2777) into Nilearn
 
-16:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210506T160000&p1=195) : Community feedback on Nilearn website, documentation
-
 ### Friday, 7 May
 
-13:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T130000&p1=195) : Demo of HTML reports, with feedback and discussion
+13:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T130000&p1=195) : Improving user interaction: Community feedback on project documentation and generated reports
 
 14:00h UTC [[Check your local time]](https://www.timeanddate.com/worldclock/converter.html?iso=20210507T140000&p1=195) : Barriers to adoption and community building
 
