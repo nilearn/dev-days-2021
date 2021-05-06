@@ -7,12 +7,29 @@
 :prewrap!:
 :nofooter:
 
+**Goal: Improve the way surfaces are supported by Nilearn and Nibabel.**
+
+Important: We need inputs from users who work with surfaces!
+
+**Outline**
+
+- Recall what was decided last year during the sprint
+
 Discussions from last year:
 
 - https://github.com/nilearn/nilearn/issues/2171[Nilearn #2171]
 - https://github.com/nipy/nibabel/issues/936[NiBabel #936]
 
+- Look at what was done since then in Nilearn and Nibabel
+- Discuss three main topics:
+    
+    - How to represent surfaces in memory?
+    - Loading and serializing surfaces
+    - API modifications to ease masking and analysis
+
 == In-memory representation
+
+**Nilearn**
 
 [horizontal]
 Volume image:: `nibabel.nifti1.Nifti1Image`.
@@ -51,6 +68,9 @@ Work in progress -- https://github.com/nilearn/nilearn/pull/2682[#2682]:
 plotting.plot_surf_stat_map(surf) # not implemented yet!
 ----
 
+**Nibabel**
+
+- Chris?
 
 
 == Loading images and serialization
