@@ -53,14 +53,3 @@ We also especially encourage attendees to suggest additional events during these
 **Organizers:** Bertrand Thirion, Chris Markiewicz, Elizabeth DuPre, Gaël Varoquaux, Jérôme Dockès, Nicolas Gensollen, Thomas Bazeille, Taylor Salo.
 
 Please contact the [Nilearn Events](mailto:nilearn.events@gmail.com) team if you have questions, or want to participate in any of the events.
-
-## Register
-
-<form name="input" method="POST" action="https://formspree.io/f/myylgbal">
-  <label>Name: <input type="text" name="Name" placeholder="Name" size="50"></label> <br />
-  <label>Email: <input type="email" name="_replyto" placeholder="Email" size="50"></label> <br />
-  <label>Affiliation: <input type="text" name="affiliation" placeholder="Current affiliation(s)" size="50"></label> <br />
-  <label>GitHub: <input type="text" name="gh-handle" placeholder="GitHub Handle" size="50"></label> <br />
-  <label>Comments or questions: <textarea name="message"></textarea></label> <br />
-  <button type="submit">Send"</button>
-</form>
